@@ -31,7 +31,7 @@ def normal(half, variance):
             return x if random() <= 1/2 else -1 * x
 
 
-def select_type():
+def select_random_type():
     rnd_type = randint(0, 100)
 
     if rnd_type <= 45:
