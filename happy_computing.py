@@ -86,7 +86,7 @@ class HappyComputing:
                 for i in range(len(free_sellers)):
                     if free_sellers[i] == 0:
                         client_type = customers_waiting_sellers.get()
-                        free_sellers[i] = int(normal(5, 2))
+                        free_sellers[i] = int(abs(normal(5, 2)))
                         if client_type == 4:
                             gain += 750
                         else:
